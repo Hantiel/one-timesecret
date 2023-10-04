@@ -89,6 +89,7 @@ class PluginOnetimesecretConfig extends CommonDBTM
 
         $lifetimes = [];
 
+	$lifetimes[$one_day_in_sec*14] = sprintf(_n('%d day', '%d days', 14), 14);
         $lifetimes[$one_day_in_sec*7] = sprintf(_n('%d day', '%d days', 7), 7);
         $lifetimes[$one_day_in_sec*3] = sprintf(_n('%d day', '%d days', 3), 3);
         $lifetimes[$one_day_in_sec] = sprintf(_n('%d day', '%d days', 1), 1);
